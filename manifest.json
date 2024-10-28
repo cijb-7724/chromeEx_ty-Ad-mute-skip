@@ -1,0 +1,14 @@
+{
+    "name": "YouTube Ad Skipper",
+    "description": "Automatically skip YouTube ads and play ads at 10x speed.",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": ["https://www.youtube.com/*"],
+            "run_at": "document_end",
+            "js": ["main.js"]
+        }
+    ],
+    "permissions": ["activeTab"]
+}
